@@ -35,6 +35,20 @@ body{
     border-radius: 5%;
 }
 
+.sieraden{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10%;
+    opacity: 30%;
+    animation-duration: 1s;
+}
+
+.sieraden:hover{
+    opacity: 100%;
+}
+
+
+
 
 nav ul{
     display:flex;
@@ -201,7 +215,7 @@ img{
     display: flex;
     justify-content: center;
     background-color: #b597bc;
-    border-radius: 5px 
+    border-radius: 10% 
 }
 
 @media (max-width:850px){
@@ -217,6 +231,13 @@ img{
    }
    .roze{
     display: block;
+   }
+   .sieraden{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10%;
+    opacity: 100%;
    }
 }
 
