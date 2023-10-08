@@ -1,54 +1,20 @@
-body {
-    background-color:#DED3DD;
-    text-align: left;
-}
-
-*{
-    box-sizing: border-box;
-}
-
-body{
-    background: linear-gradient(to bottom right, #DED3DD, #AC78B5);
-}
-
-.home{
-    text-align: center;
-}
-.wit{
-    background-image: url(https://www.dewarmtesteen.nl/images/detailed/9/Marokkaanse_Bergkristal_geode_XXL_2b.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 30%;
-    box-sizing: border-box  
-}
-
-.wit h1{
-    display: inline;
-}
-
-.roze{
-    background-color: #d2b0cb;
+header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    padding: 2%;
-    margin: 5%;
-    border-radius: 5%;
+    justify-content: space-evenly;
 }
 
-.sieraden{
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10%;
-    opacity: 30%;
-    animation-duration: 1s;
+header li{
+    margin: 1em;
 }
 
-.sieraden:hover{
-    opacity: 100%;
+header{
+    font-family: 'Apple chancery';
 }
 
+/* Dit is de home icon. */
+header img{
+    width: 100%;
+}
 
 nav ul{
     display:flex;
@@ -70,9 +36,81 @@ text-align{
     justify-content: right 
 }
 
+body {
+    background-color:#DED3DD;
+    text-align: left;
+}
+
+*{
+    box-sizing: border-box;
+}
+/* Hiermee regel ik de achtergrond kleur, van links boven licht paars naar rechts onder donker paars */
+body{
+    background: linear-gradient(to bottom right, #DED3DD, #AC78B5);
+}
+
+.home{
+    text-align: center;
+}
+
+.auto-grid{
+    flex: 1;
+}
+
+.wit{
+    background-image: url(https://www.dewarmtesteen.nl/images/detailed/9/Marokkaanse_Bergkristal_geode_XXL_2b.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 30%;
+    box-sizing: border-box  
+}
+/* Hier heb ik display inline gebruikt zodat de tekst en het achtergrond plaatje niet inelkaar komen te staan. */
+.wit h1{
+    display: inline;
+}
+/* Deze section zorgt dat de tekst en de afbeelding naast elkaar komen */
+.roze{
+    background-color: #d2b0cb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 5%;
+}
+/* Dit heb ik gedaan zodat er ruimte is tussen de tekst wat voor meer overzicht zorgt, zie bronnenlijst uitleg font spacing*/
+.roze p{
+   line-height:2em; 
+   margin-bottom:2.2em;
+}
+
+/* Hier heb ik een div gebruikt om afbeeldingen naast elkaar te zetten en specifiek deze te bewerken */
+.sieraden{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10%;
+    opacity: 30%;
+    animation-duration: 1s;
+}
+
+.sieraden:hover{
+    opacity: 100%;
+}
+
+/* Hiermee komen de heading, tekst en afbeelding naast elkaar te staan */
+.indelen{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+/* Voor het maken van de forms heb ik instructies van een video gevolgd voor de layout, zie bronnenlijst video's*/
 .forms{
     display: flex;
-   justify-content: left;
+    justify-content: center;
     outline-color: transparent;
     cursor: pointer;
     border-radius: 5%;
@@ -82,35 +120,33 @@ text-align{
 }
 
 form h3{
-    color: black;
+    color: #523d57;
     font-weight: 400;
     line-height: 1;
-    margin-bottom: 0,8em;
+    margin-bottom: 1em;
 }
 
 form input{
     position: relative;
     outline: transparent;
     background: whitesmoke;
-    font-size: 16px;
+    font-size: 1em;
     margin: 1em;
-    border: 0%;
 }
 
 input{
     width: 80%;
-    border: 2px;
+    border: 5%;
     color: #AC78B5;
     background: none;
-    padding: 10px 
+    padding:3%;
 }
 
 form button{
-    padding: 10px;
+    padding: 3%;
     background: #AC78B5;
     color: aliceblue;
-    font-size: 20px;
-    border: 0%;
+    font-size: 1em
 }
 
 form button:hover{
@@ -118,28 +154,15 @@ form button:hover{
 }
 
 form textarea{
-    border-radius: 10px;
-    margin: 10px;
-}
+    border-radius: 5%;
 
-header{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-header li{
-    margin: 20px;
-}
-
-header{
-    font-family: 'Apple chancery';
 }
 
 footer{
+    text-align:center;
     font-family: 'Apple chancery';
+    padding: 1em;
     position: absolute;
-    padding: 5px;
-    margin: 20px;
     border: 40%;
     color: black 
 }
@@ -182,7 +205,7 @@ p{
 }
 
 h1,h2,h3,h4,h5,h6 {
-   font-family: 'Apple chancery', 'dancing script' sans-serif;
+   font-family: 'Apple chancery', 'Broadway', sans-serif;
    color: #523d57;
    text-align: center;
 }
@@ -206,7 +229,7 @@ img{
     height: auto;
 }
 
-
+/* Dit is een card waar de informatie van het kopje feiten in staat. */
 .card {
     margin: 5%;
     display: flex;
@@ -215,6 +238,7 @@ img{
     border-radius: 10% 
 }
 
+/* hierdoor wordt de forms groter op kleinere devices. */
 @media (max-width:850px){
     .forms{
         grid-template-columns: auto;
@@ -222,13 +246,16 @@ img{
    }
 }
 
+/* wit is voor het deel over bergkristal de achtergrond foto gaat weg zodat deze niet in het tekstvak komt. */
 @media (max-width: 1050px) {
     .wit{
         background-image: none;
    }
+   /* hierdoor komt de inhoud weer onder elkaar wat beter is voor kleinere devices. flexbox is beter voor grotere formaten*/
    .roze{
     display: block;
    }
+   /* Hierbij komt er iets meer ruimte tussen de elementen maar is de opacity ook standaard normaal want hover heeft geen effect bij ipad of mobiel. */
    .sieraden{
     display: flex;
     flex-wrap: wrap;
@@ -237,20 +264,19 @@ img{
     opacity: 100%;
    }
 }
-
-
-header img{
-    width: 50px;
+/* Flexbox gaat hierdoor weg waardoor de onderdelen waar onder elkaar gaan staan*/
+@media (max-width: 1025px) {
+    .indelen{
+   display: block;
+}
 }
 
-header img{
-    width: 50px;
-}
-
+/* Dit heb ik aangepast zodat de figcaption ook onder de foto kan komen te staan zoals bij de pagina over de bergkristal*/
 figcaption{
     margin-top: 20%;
 }
 
+/* Omdat dit de laatste div is die ik heb gebruikt heb ik deze geen class gegeven, de div is specifiek voor de animatie van de afbeelding*/
 div{
     display: inline  
 }
