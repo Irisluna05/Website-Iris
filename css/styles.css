@@ -1,7 +1,6 @@
 body {
     background-color:#DED3DD;
     text-align: left;
-    overflow: auto;
 }
 
 *{
@@ -49,8 +48,6 @@ body{
 .sieraden:hover{
     opacity: 100%;
 }
-
-
 
 
 nav ul{
@@ -185,7 +182,7 @@ p{
 }
 
 h1,h2,h3,h4,h5,h6 {
-   font-family: 'Apple chancery', sans-serif;
+   font-family: 'Apple chancery', 'dancing script' sans-serif;
    color: #523d57;
    text-align: center;
 }
@@ -209,9 +206,6 @@ img{
     height: auto;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 .card {
     margin: 5%;
@@ -258,7 +252,7 @@ figcaption{
 }
 
 div{
-    display: inline 
+    display: inline  
 }
 
 div{
