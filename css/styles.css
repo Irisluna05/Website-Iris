@@ -45,6 +45,10 @@ body{
     background: linear-gradient(to bottom right, #DED3DD, #AC78B5)
 }
 
+iframe{
+    border: 0;
+}
+
 .home{
     text-align: center;
 }
@@ -142,7 +146,7 @@ form input{
 
 input{
     width: 80%;
-    border: 0,5em;
+    border: 5px;
     color: #AC78B5;
     background: none;
     padding:3%;
@@ -168,7 +172,7 @@ footer{
     font-family: 'Apple chancery';
     padding: 1em;
     position: relative;
-    border: 0,5em;
+    border: 5px;
     border-style: dotted;
     border-color: black;
     margin: 1em;
