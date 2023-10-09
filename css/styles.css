@@ -46,15 +46,24 @@ body {
 }
 /* Hiermee regel ik de achtergrond kleur, van links boven licht paars naar rechts onder donker paars */
 body{
-    background: linear-gradient(to bottom right, #DED3DD, #AC78B5);
+    background: linear-gradient(to bottom right, #DED3DD, #AC78B5)
 }
 
 .home{
     text-align: center;
 }
+/* Deze section is voor de pagina amethist en het aanpassen van de achtergrond kleur.*/
+.tweede{
+    background: linear-gradient(to bottom, #ceaccb ,#b381c0)
+}
+/* Deze section is voor de pagina rozenkwarts en het aanpassen van de achtergrond kleur.*/
+.derde{
+    background: linear-gradient(to bottom left, #e8c3cd,  #d8a2b2)
+}
 
-.auto-grid{
-    flex: 1;
+/* Deze section is voor de pagina bergkristal en het aanpassen van de achtergrond kleur.*/
+.vierde{
+    background: linear-gradient(to bottom, #f5eff5, #cbcfce) ;
 }
 
 .wit{
@@ -68,9 +77,10 @@ body{
 .wit h1{
     display: inline;
 }
+
 /* Deze section zorgt dat de tekst en de afbeelding naast elkaar komen */
 .roze{
-    background-color: #d2b0cb;
+    background-color: #f0cdd4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,7 +126,7 @@ body{
     border-radius: 5%;
     padding: 5%;
     width: 50%;
-    background-color: rgb(242, 219, 237);
+    background-color: #e6d6ea;
 }
 
 form h3{
@@ -159,12 +169,15 @@ form textarea{
 }
 
 footer{
-    text-align:center;
     font-family: 'Apple chancery';
     padding: 1em;
-    position: absolute;
+    position: relative;
     border: 40%;
+    border-style: dotted;
+    border-color: black;
+    margin: 1em;
     color: black 
+    
 }
 
 a:visited{
@@ -246,16 +259,12 @@ img{
    }
 }
 
-/* wit is voor het deel over bergkristal de achtergrond foto gaat weg zodat deze niet in het tekstvak komt. */
-@media (max-width: 1050px) {
-    .wit{
-        background-image: none;
-   }
+@media (max-width: 1200px) {
    /* hierdoor komt de inhoud weer onder elkaar wat beter is voor kleinere devices. flexbox is beter voor grotere formaten*/
    .roze{
     display: block;
    }
-   /* Hierbij komt er iets meer ruimte tussen de elementen maar is de opacity ook standaard normaal want hover heeft geen effect bij ipad of mobiel. */
+   /* Hierbij komt er iets meer ruimte tussen de elementen maar is de opacity ook standaard want hover heeft geen effect bij ipad of mobiel. */
    .sieraden{
     display: flex;
     flex-wrap: wrap;
@@ -268,6 +277,11 @@ img{
 @media (max-width: 1025px) {
     .indelen{
    display: block;
+}
+
+/* wit is voor het deel over bergkristal de achtergrond foto gaat weg zodat deze niet in het tekstvak komt. */
+.wit{
+    background-image: none;
 }
 }
 
