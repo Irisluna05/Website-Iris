@@ -176,6 +176,10 @@ footer{
     
 }
 
+a{
+    color: #e3e6e5;
+}
+
 a:visited{
     color: black;
 }
