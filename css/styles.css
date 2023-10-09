@@ -142,7 +142,7 @@ form input{
 
 input{
     width: 80%;
-    border: 5%;
+    border: 0,5em;
     color: #AC78B5;
     background: none;
     padding:3%;
@@ -168,7 +168,7 @@ footer{
     font-family: 'Apple chancery';
     padding: 1em;
     position: relative;
-    border: 40%;
+    border: 0,5em;
     border-style: dotted;
     border-color: black;
     margin: 1em;
